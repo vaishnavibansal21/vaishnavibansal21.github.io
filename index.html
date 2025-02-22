@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- custon css file link  -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+  <!-- header section starts -->
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>7</span>Wonders</a>
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#book">book</a>
+      <a href="#services">services</a>
+      <a href="#packages">packages</a>
+      <a href="#About">About Us</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+  <!-- header section ends -->
+
+  <!-- login form container -->
+  <div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+      <h3>login</h3>
+      <input type="email" class="box" placeholder="enter your email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login now" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">remember me</label>
+      <p>forget password? <a href="#">click here</a></p>
+      <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+  </div>
+
+  <!-- home section starts -->
+
+  <section class="home" id="home">
+    <div class="content">
+      <h3>EVERY MONUMENT HAS A STORY</h3>
+      <p>Are you ready to listen?</p>
+      <a href="index.html" class="btn">discover more</a>
+      <div class="controls">
+        <span class="vid-btn active" data-src="InShot_20250222_001236601.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video src="InShot_20250222_001236601.mp4" id="video-slider" loop autoplay></video>
+      </div>
+  </section>
+
+  <!--=========Book section===============-->
+  <section class="book" id="book">
+    <div class="banner-text-item">
+      <div class="banner-heading">
+        <h1>Find your Next tour!</h1>
+      </div>
+      <form class="form">
+        <input type="text" list="mylist" placeholder="Where would you like to go?">
+        <datalist id="mylist">
+          <option>Taj Mahal</option>
+          <option>Hampi</option>
+          <option>Konark Sun Temple</option>
+          <option>Khajuraho Temple</option>
+          <option>Qutub Minar</option>
+          <option>Golden Temple</option>
+          <option>Ajanta and Ellora caves</option>
+        </datalist>
+        <input type="date" class="date">
+        <a href="book.html" class="booking">book now</a>
+      </form>
+    </div>
+  </section>
+
+  <!--=========Services===============-->
+  <h1>Our Services</h1>
+  <section class="services" id="services">
+    <div class="service-item">
+      <img src="guide2.jpg">
+      <h2>800+ Our Local Guides</h2>
+    </div>
+    <div class="service-item">
+      <img src="trustAgency.jpg">
+      <h2>100% Trusted Tour Agency</h2>
+    </div>
+    <div class="service-item">
+      <img src="experience.jpg">
+      <h2>28+ Years of Travel Experience</h2>
+    </div>
+    <div class="service-item">
+      <img src="happy.jpg">
+      <h2>98% Our Travelers are Happy</h2>
+    </div>
+  </section>
+
+  <!--===========Footer=================-->
+  <footer>
+    <div class="contact" id="contact">
+      <div class="footer-logo">
+        <h2>ExploreTheWorld</h2>
+      </div>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-link facebook" data-platform="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link twitter" data-platform="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link dribbble" data-platform="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link linkedin" data-platform="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 ExploreTheWorld. All rights reserved.</p>
+  </footer>
+  <!-- custon js file link  -->
+  <script src="script.js"></script>
 </body>
+
 </html>
