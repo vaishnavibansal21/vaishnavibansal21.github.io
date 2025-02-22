@@ -5,7 +5,7 @@ let loginForm = document.querySelector(".login-form-container");
 let formClose = document.querySelector("#form-close");
 let menu=document.querySelector('#menu-bar');
 let navbar=document.querySelector('.navbar');
-let videoBtn=document.querySelectorall('.vid-btn');
+// let videoBtn=document.querySelectorall('.vid-btn');
 
 
 window.onscroll=()=>{
